@@ -52,6 +52,10 @@ module XCPretty
       test_node = suite(classname).add_element('testcase')
       test_node.attributes['classname'] = classname
       test_node.attributes['name']      = test_case
+      # Add time attribute with fake value of 0, so SonarQube plugin will parse
+      # the report with failed test(s) without failing. Time attribute is
+      # required by JUnit schema - https://github.com/windyroad/JUnit-Schema
+      test_node.attributes['time']      = "0"
       fail_node = test_node.add_element('failure')
       fail_node.attributes['message'] = reason
       fail_node.text = file.sub(@directory + '/', '')
