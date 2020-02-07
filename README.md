@@ -1,21 +1,17 @@
-### Note from Lightricks:
-This is a fork of xcpretty which we use at Lightricks.  
-We allow outside contributions, as long as they are well documented and well tested.
-
 ![logo](http://i.imgur.com/i2fElxx.png)
 
 __`xcpretty` is a fast and flexible formatter for `xcodebuild`__.<br/>
 It does one thing, and it should do it well.
 
 ## Installation
-Since this fork isn't pushed to RubyGems, you can't install it normally from RubyGems.  
+Since this fork isn't pushed to RubyGems, you can't install it normally from RubyGems.
 You'll have to install it using this repository as the source.
 
 With [bundler](https://bundler.io/), add the following line to your Gemfile:
 ```
 gem "xcpretty", git:"https://github.com/04n0/xcpretty"
 ```
-and run `bundle` or `bundle install`.  
+and run `bundle` or `bundle install`.
 You can also install a specific branch or revision using `branch: <BRANCH>` and `ref: <REF>`.
 
 With [specific_install](https://rubygems.org/gems/specific_install/) gem, run the following command:
